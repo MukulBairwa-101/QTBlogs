@@ -21,6 +21,10 @@
     margin: 10px auto;
     
 }
+.swipper-container{
+    margin-top:30px;
+    margin-bottom: 100px;
+}
 @media screen and (min-width: 320px) and (max-width:481px) {
 .blog-container{
     margin: 20px 15px;

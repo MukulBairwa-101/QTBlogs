@@ -2,6 +2,8 @@ import React,{useState,useEffect,useContext} from 'react'
 import data from "../../../Assets/data";
 import {AppContext} from "../../../Context/AppContext"; 
 import { useNavigate } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Blogs = () => {
 
@@ -15,6 +17,7 @@ const Blogs = () => {
 
     useEffect(() => {
         setFeatured(data);
+        AOS.init();
     },[])
 
 
@@ -32,7 +35,7 @@ const Blogs = () => {
             <div className="featured-blogs-wrapper">
                 {featured.map((fblog)=>{
                     return(
-                        <div className="featured-card flex" key={fblog.id}>
+                        <div className="featured-card flex" key={fblog.id} data-aos='fade-up ' data-aos-duration="1000">
 
                             <img src={fblog.cover} alt='fblog-cover' className="featured-image" />
                             <div className="featured-text">

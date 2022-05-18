@@ -6,13 +6,14 @@ import MyBlogs from '../Contents/MyBlogs';
 const Banner = ()=>{
     const navigate = useNavigate();
     return(
-        <div className="flex flex-column align-items banner" >
+        <div className="flex flex-column  banner " >
+            <img src="/images/banner-balckbox.jpg" alt="blog-banner" className="blogbanner" />
+            <div className="banner-text-div">
+
             <h1 className="banner-logo" >QTBlogs</h1>
             <h1>Write your blog now</h1>
-            {/* <div className="btn-create-div"> */}
-
             <button className="btn pointer create-btn" onClick={()=>navigate('/create')}>Create</button>
-            {/* </div> */}
+            </div>
         </div>
     )
 }

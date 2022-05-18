@@ -27,7 +27,7 @@ const data  = [
             UP the 'Lukhnow Super Giants'.
 
             `,
-            date:'May 09,2022 23:27 IST',
+            date:' 5/9/2022 9:27:16 PM',
             author:'Mukul K.B',
             cover:'/images/ipl2022.jpg',
             subTexts:[
@@ -58,7 +58,7 @@ const data  = [
             Living a healthy lifestyle can inspire creativity and teach you discipline, adaptability, and balance.This will not only leave you looking and feeling better, but you will show up as a better version of yourself for the people in your life that truly matter.
             
             `,
-            date:'May 09,2022 13:07 IST',
+            date:' 5/9/2022 11:7:36 AM',
             author:'Mukul K.B',
             cover:'/images/health.jpg',
             subTexts:[
@@ -89,6 +89,70 @@ const data  = [
 
                     
                 }
+
+
+            ]
+
+        },
+        {
+            id:3,
+            title:'Netflix - Package of Entertainment World',
+            category:'Entertainment',
+            text:`Netflix is a subscription-based streaming service that allows our members to watch TV shows and movies without commercials on an internet-connected device. You can also download TV shows and movies to your iOS,
+             Android, or Windows 10 device and watch without an internet connection.
+
+             Netflix's Rs 199 per month plan lets users watch content at 480p resolution on just one screen at a time. But you can access all the content on Netflix, 
+             including the recent mobile games that the company has rolled out. You can download content as well with this account.09
+             Apart from the Mobile plan, Netflix also offers a 'Basic' plan that costs Rs 199 per month/ Rs 2,388 for a year. The plan includes pretty much the same benefits as the Netflix Mobile package, but you can stream the content on more devices,
+              including laptops and smart TVs.
+
+            `,
+            date:' 5/9/2022 9:27:16 PM',
+            author:'Mukul K.B',
+            cover:'/images/netflixcover.jpg',
+            subTexts:[
+                {
+                    id:1,
+                    subTitle:`Top 5 Netflix Sci-Fi Series`,
+                    subtext:'Here is the list of all Items',
+                    subItems:['1- Dark','2- Stranger Things','3- Lost In Space','4- Umbrella Academy','5- Witcher',
+                ],
+                
+                    
+                    subImage1:'/images/dark.jpg',
+                    subImage2:'/images/stranger.jpg'
+
+                    
+                },
+                {
+                    id:2,
+                    subTitle:`Top 5 Netflix Action Series`,
+                    subtext:'',
+                    subItems:['1- Cursed','2- Shadow and Bone','3- Sweet Thooth','4- The Witcher','5- The Titans',
+                ],
+                
+                    
+                    subImage1:'/images/cursed2.jpg',
+                    
+
+                    
+                },
+                {
+                    id:3,
+                    subTitle:`Top 10 Netflix Movies of all time`,
+                    subtext:'',
+                    subItems:['1- Red Notice','2- The Power Of the Dog','3- 6 Underground ','4- Dont Look Up','5- The Adam Project',
+                    '6- Annhilation','7- The Social Network','  8- Enola Holmes','9- Army Of the Dead','10- Army Of The Thieves'
+                ],
+                
+                    
+                    subImage1:'/images/amth.jpg',
+                    
+                    
+
+                    
+                }
+
 
 
             ]

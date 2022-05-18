@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=PT+Sans&family=Poppins&display=swap');
 /* global */
 :root{
     --dark-mode:#161616;
@@ -117,6 +117,10 @@ html{
 .mt-20{
     margin: 20px 0px;
 }
+nav{
+    /* border-bottom: 1px solid var(--gray-text); */
+    padding:20px;
+}
 
 /* buttons */
 
@@ -155,12 +159,19 @@ html{
 
 /* buttons */
 .banner{
-    background-color:var(--gray-text-alt);
-    padding:60px;
-    /* background: linear-gradient(-90deg, #05213b, #000c16); */
+    padding:20px 0px;
+    position: relative;
 }
 .banner-logo{
     font-size:50px;
+}
+.blogbanner{
+    max-width:100vw;
+}
+.banner-text-div{
+    position:absolute;
+    top:180px;
+    left:80px;
 }
 
 
@@ -176,9 +187,16 @@ html{
     height:50px;
     width: 100%;
 }
+.logo-text{
+    font-size:18px;
+    letter-spacing:.2rem;
+    font-weight:400;
+    font-family: 'PT Sans', sans-serif;
+}
 
 
 /* navigation bar */
+
 
 
 
@@ -201,6 +219,14 @@ html{
 
 
 /* featured blogs*/
+
+/* empty blogs */
+
+.empty-wrapper{
+    margin: 10px 0px ;
+    padding:80px 80px;
+    background-color:var(--gray-text-alt);
+}
 
 
 
@@ -255,6 +281,23 @@ html{
  
     .featured-text{
         margin: 0px 0px;
+    }
+    .banner-logo{
+        font-size:25px;
+        text-align: center;
+    }
+    .banner-text-div{
+        position:relative;
+        top:0px;
+        left:0;
+        margin: 0px auto;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+    }
+    .empty-wrapper{
+
+        padding:20px 20px;
     }
     
 }
@@ -312,6 +355,20 @@ html{
     .featured-text{
         margin: 0px 0px;
     }
+    .banner-logo{
+        font-size:28px;
+        text-align: center;
+    }
+    .banner-text-div{
+        position:relative;
+        top:0px;
+        left:0;
+        margin: 0px auto;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+    }
+    
     
 }
 @media screen and (min-width: 769px) and  (max-width:980px){
@@ -365,6 +422,18 @@ html{
      
     .featured-text{
         margin: 0px 0px;
+    }
+    .banner-logo{
+        font-size:30px;
+    }
+    .banner-text-div{
+        position:absolute;
+        top:100px;
+        left:20px;
+        margin: 0px auto;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
     }
     
 }

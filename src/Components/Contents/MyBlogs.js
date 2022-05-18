@@ -1,8 +1,11 @@
-import React,{useState,useContext} from "react";
+import React,{useState,useContext,useEffect} from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import {AppContext} from "../../Context/AppContext";
 import { useNavigate } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import EmptyBlogs from "./EmptyContent/EmptyBlogs";
 
 const MyBlogs = () => {
 
@@ -19,14 +22,20 @@ const MyBlogs = () => {
         navigate(`/myblogs/${blogitem.id}`);
     }
 
+    useEffect(() => {
+      AOS.init();
+  },[])
+
 
 
 
 
   return (
-    <div className="featured-container container swipper-container">
+    <div className="featured-container container swipper-container" data-aos='fade-up ' data-aos-duration="1000">
       <h1 className="section-heading"> My Blogs</h1>
-      <Swiper
+      {
+        myblogs.length !== 0 ?
+        <Swiper
         spaceBetween={50}
         slidesPerView={3}
         breakpoints={{
@@ -78,7 +87,10 @@ const MyBlogs = () => {
           }
         
       </Swiper>
-    </div>
+        :
+      <EmptyBlogs />
+      }
+        </div>
   );
 };
 

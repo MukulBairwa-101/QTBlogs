@@ -45,7 +45,7 @@ const CreateBlog = () => {
         })
 
     }
-    console.log(myblogs,'myblogs');
+
 
 
   return (

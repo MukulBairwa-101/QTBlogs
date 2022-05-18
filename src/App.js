@@ -13,10 +13,13 @@ function App() {
   const navigate = useNavigate();
   return (
     <div className="App">
+      <nav className="flex align-items">
+
       <div className="logo-div pointer" onClick={()=>navigate('/')}>
         <img src="/images/logo.png" className="logo-image" />
-        <h2 className=""  >QTBlogs</h2>
+        <h2 className="logo-text">QTBLOGS</h2>
       </div>
+      </nav>
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/blogs/:id" element={<Blog />} />
