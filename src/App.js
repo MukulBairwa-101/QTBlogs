@@ -16,7 +16,7 @@ function App() {
       <nav className="flex align-items">
 
       <div className="logo-div pointer" onClick={()=>navigate('/')}>
-        <img src="/images/logo.png" className="logo-image" />
+        <img src="/images/logo.png" className="logo-image" alt="logo-img" />
         <h2 className="logo-text">QTBLOGS</h2>
       </div>
       </nav>

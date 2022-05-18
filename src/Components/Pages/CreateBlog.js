@@ -1,11 +1,9 @@
 import React ,{useState ,useContext} from "react";
 import {AppContext} from "../../Context/AppContext";
-import { useNavigate } from "react-router-dom";
 
 const CreateBlog = () => {
 
     const appContext = useContext(AppContext);
-    const navigate = useNavigate();
     
     const [myblogs,setMyblogs]= appContext.value2;
 
