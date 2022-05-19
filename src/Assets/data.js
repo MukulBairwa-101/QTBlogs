@@ -158,6 +158,62 @@ const data  = [
             ]
 
         },
+        {
+            id:4,
+            title:'Team Work is The Best Work Solution Of the Fast Work to Grow a Better World ',
+            category:'Human Values',
+            text:`What is Teamwork? According to BusinessDictionary.com, teamwork is “The process of working collaboratively with a group of people in order to achieve a goal. Teamwork is often a crucial part of a business, as it is often necessary for colleagues to work well together, trying their best in any circumstance.
+           
+            `,
+            date:' 5/19/2022 11:35:46 PM',
+            author:'MJ Watson',
+            cover:'/images/teamwork.jpg',
+            subTexts:[
+                {
+                    id:1,
+                    subTitle:`Why is teamwork an important life skill?`,
+                    subtext:'When teamwork is effective, communication, collaboration and combined efforts makes for a better outcome. Everyone brings their skills, talents and experiences together for a common goal. The different styles of each person make for more creativity and innovation.04',
+                    subItems:[
+                ],
+                    
+                    subImage1:'/images/teamwork2.jpg',
+                    subImage2:''
+
+                    
+                },
+                {
+                    id:2,
+                    subTitle:`Why is teamwork important in the environment?`,
+                    subtext:'A teamwork environment promotes an atmosphere that fosters friendship and loyalty. These close-knit relationships motivate employees in parallel and align them to work harder, cooperate and be supportive of one another. Individuals possess diverse talents, weaknesses, communication skills, strengths, and habits.',
+                    subItems:['The ability to simultaneously perform as an individual and together with your colleagues or employees in effective teamwork is key to attaining growth and success.',
+                    `Leaders that develop great teams around them have two things that they do well:
+
+                    they have a lot of emotional intelligence and
+                    are able to provide a clear vision for the team.`,''
+                ],
+                    
+                    subImage1:'/images/teamwork3.jpg',
+                    subImage2:''
+
+                    
+                },
+                {
+                    id:3,
+                    subTitle:`6 simple ways to foster a positive hybrid work environment `,
+                    subtext:'',
+                    subItems:['1 - Prioritise onboarding and training. ','2 - Help your employees find a comfortable work environment.','3 - Conduct regular check-ins.','4 - Encourage team collaboration and communication.','5 - Develop a strong workplace culture.',
+                    '6 - Facilitate opportunities for learning.'
+                ],
+                    
+                    subImage1:'',
+                    subImage2:''
+
+                    
+                }
+            ]
+
+        },
+
 
 
 

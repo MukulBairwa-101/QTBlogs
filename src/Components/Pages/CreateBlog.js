@@ -1,11 +1,13 @@
 import React ,{useState ,useContext} from "react";
 import {AppContext} from "../../Context/AppContext";
+import { useNavigate } from "react-router-dom";
 
 const CreateBlog = () => {
 
     const appContext = useContext(AppContext);
-    
+    const [isClicked,setIsClicked] = useState(false);
     const [myblogs,setMyblogs]= appContext.value2;
+    const navigate = useNavigate();
 
     const [customBlog,setCustomBlog] =useState({
         Title:'',
@@ -33,6 +35,7 @@ const CreateBlog = () => {
         customBlog.Time = createdAt;
         customBlog.id = myblogs.length + 1;
         setMyblogs([...myblogs,customBlog]);
+        setIsClicked(true);
         setCustomBlog({
           Title:'',
           Description:'',
@@ -41,7 +44,10 @@ const CreateBlog = () => {
           Time:'',
   
         })
-
+        setTimeout(()=>{
+          setIsClicked(false);
+        },5000)
+        navigate('/#myblogsSection');
     }
 
 
@@ -101,6 +107,8 @@ const CreateBlog = () => {
       <div className="create-btn-div" >
         <button className="btn pointer create-btn" onClick={addBlog}>Create</button>
       </div>
+      {/* {isClicked ?<h4>Blog is added Successfully</h4>:'' } */}
+      
       </div>
     </div>
   );

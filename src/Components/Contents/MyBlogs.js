@@ -31,7 +31,7 @@ const MyBlogs = () => {
 
 
   return (
-    <div className="featured-container container swipper-container" data-aos='fade-up ' data-aos-duration="1000">
+    <div id="myblogsSection" className="featured-container container swipper-container" data-aos='fade-up ' data-aos-duration="1000">
       <h1 className="section-heading"> My Blogs</h1>
       {
         myblogs.length !== 0 ?
