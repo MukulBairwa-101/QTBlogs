@@ -4,6 +4,7 @@ import Home from './Components/Pages/Home';
 import Blog from './Components/Pages/Blog';
 import CreateBlog from './Components/Pages/CreateBlog';
 import MyBlog from "./Components/Pages/MyBlog";
+import Footer from "./Components/Contents/Footer/Footer";
 import './App.css';
 import './Components/Pages/styles/Blogs.css';
 import "./Components/Pages/styles/CreateBlog.css";
@@ -26,6 +27,7 @@ function App() {
         <Route exact path="/myblogs/:id" element={<MyBlog />} />
         <Route exact path="/create" element={<CreateBlog />} />
       </Routes>
+      <Footer />
 
     </div>
   );

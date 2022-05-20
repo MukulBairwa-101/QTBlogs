@@ -76,7 +76,7 @@ const MyBlogs = () => {
                                     <h5 className="author">{item.Name}</h5>
                                     <span className="blogdate">{item.Time}</span>
                                 </div>
-                                <h4>{item.Description.substring(0,20 )}  . . .</h4>
+                                <h4>{item.Description.substring(0,25 )}  . . .</h4>
                                 <button className=" btn readmore pointer" onClick={()=>getBlog(item)} >Read more</button>
                             </div>
 

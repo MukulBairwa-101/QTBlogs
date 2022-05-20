@@ -46,7 +46,7 @@ const CreateBlog = () => {
         })
         setTimeout(()=>{
           setIsClicked(false);
-        },5000)
+        },3000)
         navigate('/#myblogsSection');
     }
 
@@ -57,7 +57,7 @@ const CreateBlog = () => {
       <h1>Write your thoughts . . . .</h1>
       <div className="divider"></div>
       <div className="input-wrapper ">
-          <form>
+          <form onSubmit={addBlog}>
           <div className="flex flex-column mt-20 ">
           <label>Blog Title</label>
           <input
@@ -67,6 +67,7 @@ const CreateBlog = () => {
             className="mt-20 input"
             value={customBlog.Title}
             onChange={(e)=>handleChange(e)}
+            required="true"
           />
         </div>
         <div className="flex flex-column mt-20">
@@ -78,6 +79,7 @@ const CreateBlog = () => {
             className="mt-20 input"
             value={customBlog.Description}
             onChange={(e)=>handleChange(e)}
+            required="true"
           />
         </div>
         <div className="flex flex-column mt-20">
@@ -89,6 +91,7 @@ const CreateBlog = () => {
             className="mt-20 input"
             value={customBlog.Name}
             onChange={(e)=>handleChange(e)}
+            required="true"
           />
         </div>
         <div className="flex flex-column mt-30">
@@ -100,13 +103,15 @@ const CreateBlog = () => {
             className="mt-20 input"
             value={customBlog.Category}
             onChange={(e)=>handleChange(e)}
+            required="true"
           />
         </div>
+        <div className="create-btn-div" >
+        <button type="submmit" className="btn pointer create-btn" >Create</button>
+      </div>
     </form>
 
-      <div className="create-btn-div" >
-        <button className="btn pointer create-btn" onClick={addBlog}>Create</button>
-      </div>
+      
       {/* {isClicked ?<h4>Blog is added Successfully</h4>:'' } */}
       
       </div>

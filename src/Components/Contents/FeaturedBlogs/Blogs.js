@@ -30,7 +30,7 @@ const Blogs = () => {
     }
 
     return (
-        <div className="featured-container container">
+        <div className="featured-container container" id="featuredblogsSection">
             <h1 className="section-heading"> Featured Blogs</h1>
             <div className="featured-blogs-wrapper">
                 {featured.map((fblog)=>{
