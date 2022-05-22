@@ -9,15 +9,16 @@ import EmptyBlogs from "./EmptyContent/EmptyBlogs";
 
 const MyBlogs = () => {
 
-    
     const appContext = useContext(AppContext);
     const navigate = useNavigate();
     const [myblogs,setMyblogs]= appContext.value2;
     const [blog,setBlog]= appContext.value1;
 
+
     const getBlog =(blogitem)=>{
         let filteredData = myblogs.filter((item) => item.id === blogitem.id);
         setBlog(filteredData);
+        
 
         navigate(`/myblogs/${blogitem.id}`);
     }
@@ -25,7 +26,6 @@ const MyBlogs = () => {
     useEffect(() => {
       AOS.init();
   },[])
-
 
 
 
@@ -67,8 +67,8 @@ const MyBlogs = () => {
                     <SwiperSlide className="swipper-slide">
                         <div className="slide myblog-card" key={item.id}>
                             <div className="myblog-image-div">
-                                <img  src ="/images/sample.jpg" alt="sample" className="myblog-image" />
-
+                              {item.image?  <img  src ={item.image} alt="sample" className="myblog-image" /> :  <img  src ="/images/sample.jpg" alt="sample" className="myblog-image" />}
+                               
                             </div>
                             <div className="featured-text myblog-text">
                                 <h4 className="blog-category-heading">{item.Category}</h4>

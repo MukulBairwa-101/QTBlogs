@@ -25,7 +25,7 @@
     /* myblogs */
 
     .swipper-slide{
-        /* background-color:gray; */
+
     }
     .myblog-card{
         margin: 20px 0px;
@@ -34,6 +34,9 @@
     .myblog-image{
         width: 100%;
         max-width:300px;
+        height:250px;
+        object-fit: cover;
+        object-position: center center;
     
     }
     .myblogpage-Cover{
@@ -44,6 +47,10 @@
 
 
 
+    .uploadimage{
+        max-width: 100px;width: 100%;
+        padding:5px 0px;
+    }
 
 
 
@@ -64,6 +71,8 @@
     width: 100%;
     max-width:300px;
     height:180px;
+    object-fit: cover;
+    object-position: center center;
 }
 
 .myblogpage-Cover{

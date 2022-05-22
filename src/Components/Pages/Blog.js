@@ -4,6 +4,7 @@ const Blog = () => {
 
     const appContext = useContext(AppContext);
     const [blog,setBlog]= appContext.value1;
+    console.log(blog,"sdhsjdjdhdjhdjshdjshj")
     return (
         <div className="blog-container container"> 
             {
@@ -19,8 +20,12 @@ const Blog = () => {
                                 </div>
                             </div>
                             <div className="page-cover-div"> 
+                            {
+                                blogitem.image ?
+                                <img src={blogitem.image} alt="cover" className="blogpage-Cover" />
+                                : <img src={blogitem.cover} alt="cover" className="blogpage-Cover" />
+                            }
 
-                            <img src={blogitem.cover} alt="cover" className="blogpage-Cover" />
                             </div>
                             <p className="blog-description blog-desc-m">
                                 {blogitem.text}

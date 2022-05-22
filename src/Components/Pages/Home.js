@@ -1,10 +1,14 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import Blogs from '../Contents/FeaturedBlogs/Blogs';
 import { useNavigate } from "react-router-dom";
 import MyBlogs from '../Contents/MyBlogs';
+import BlogCreated from '../Contents/BlogCreated';
+import {AppContext} from "../../Context/AppContext";
 
 const Banner = ()=>{
     const navigate = useNavigate();
+
+
     return(
         <div className="flex flex-column  banner " >
             <img src="/images/banner-balckbox.jpg" alt="blog-banner" className="blogbanner" />
@@ -20,8 +24,12 @@ const Banner = ()=>{
 
 
 const Home = () => {
+    const appContext = useContext(AppContext);
+    const [isCreated,setIsCreated] = appContext.value3;
     return (
         <div>
+            {isCreated ?<BlogCreated />:''}
+            
             <Banner />
             <Blogs />
             <MyBlogs />

@@ -13,20 +13,9 @@ const Footer = () => {
         <h2 className="logo-text footer-logo-text">QTBLOGS</h2>
       </div>
       <div className="footer-nav flex ">
-            
-            <div className="flex flex-column footer-item-div">
-                <h4 className="footer-link">Blogs</h4>
-                <ul>
-                    <li onClick={()=>footerRoute('featuredblogsSection')}>
-                        Featured Blogs
-                    </li>
-                    <li onClick={()=>footerRoute('myblogsSection')}>
-                        My Blogs
-                    </li>
-                </ul>
 
-            </div>
-            <div className="flex flex-column footer-item-div">
+
+      <div className="flex flex-column footer-item-div">
                 <h4 className="footer-link">About Us</h4>
                 <p className="footer-p">QTBlogs is a Blog platform for  writing and sharing your thoughts with the everyone out there .
                     In QTBlogs you can create your blogs , look at your blogs , update your blog items , and can remove your blog post.
@@ -34,6 +23,28 @@ const Footer = () => {
                 </p>
 
             </div>
+
+            
+            <div className="flex flex-column footer-item-div">
+                <h4 className="footer-link">Blogs</h4>
+                <ul>
+                    <li >
+                        <a href="#featuredblogsSection" >
+
+                        Featured Blogs
+                        </a>
+                    </li>
+                    <li >
+                    <a href="#myblogsSection" >
+
+                        My Blogs
+                    </a>
+                    </li>
+                </ul>
+
+            </div>
+            
+
             
       </div>
         </div>

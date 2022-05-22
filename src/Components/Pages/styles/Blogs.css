@@ -2,7 +2,10 @@
     width: 100%;
     max-width: 500px;
 }
-
+.blog-container{
+    /* margin: 20px 15px 20px 15px; */
+    /* background-color:blue; */
+}
 .blog-description{
     letter-spacing:.05rem;
     line-height:28px;

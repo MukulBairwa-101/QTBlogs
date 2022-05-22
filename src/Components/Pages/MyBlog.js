@@ -20,8 +20,11 @@ const MyBlog = () => {
                                 </div>
                             </div>
                             <div className="page-cover-div"> 
-
-                            <img src="/images/sample.jpg" alt="cover" className="myblogpage-Cover" />
+                            {
+                                blogitem.image ?
+                                <img src={blogitem.image} alt="cover" className="myblogpage-Cover" />
+                                :''
+                            }
                             </div>
                             <p className="blog-description blog-desc-m">
                                 {blogitem.Description}
